@@ -15,10 +15,17 @@
 
   <section class='sidebar clearfix'>
     <h3>kenny huang</h3>
+
+
     <div class='portrait-img'></div>
-    <div class='message-box hidden'>hire me and give me lots of $$!</div>
+    <div class='message-box hidden'>Hi! I'm Kenny Huang, I'm looking forward to working with you! </div>
+    <h3>about myself</h3>
+    <p>
+      stuff about web development, skill labor automation, even more stuff about mental labor automateion
+    </p>
     <div class='contact-container'>
     <h3>contact info</h3>
+    <div class="github-address">github: </div>
     <div><div class='phone-sprite'></div>cell: 516-589-1469</div>
     <div class='email'>khuangtai@gmail.com</div>
     <% src="https://maps.googleapis.com/maps/api/staticmap?&zoom=13&size=200x200&sensor=false&markers=40.706159%2C-73.835001&key=AIzaSyDtlCO4voB02BO4bKGZgy2hXj2iXUhb5uM" %>
@@ -29,48 +36,137 @@
     <div>8330 118th St Apt 4A</div>
     <div>Kew Gardens, NY 11415</div>
     <div><img src="<%= src %>" class='contact-location'/></div>
-
+      <ul class="skill-list">
+        skills:
+        <li>Ruby</li>
+        <li>Rails</li>
+        <li>JavaScript</li>
+        <li>Backone.js</li>
+        <li>JQuery</li>
+        <li>git</li>
+        <li>rspec</li>
+        <li>sql</li>
+        <li>html</li>
+        <li>css</li>
+      </ul>
     </div>
   </section>
 
 
   <section class="mainbar">
-    <article class="projects and stuff">
-      projects
-    </article>
-    <div class="row-container">
-      <h5>reddit clone(rails, backbone)</h5>
-        <a href="www.reddit-clone-277.herokuapps.com"><div class='reddit-clone-img'></div></a>
-      <p>
-        use bunch of stuff from rails and backbone to minic reddit
-        in addition, sub reddits live chat capability is integerate
-        also geo mapping.
-      </p>
-    </div>
-    <div class="row-container">
-      <h5>active record lite(ruby)</h5>
-      <p>
-        cloned active record with ruby metaprogramming
-      </p>
-    </div>
-    <div class="row-container">
-      <h5></h5>
-    </div>
-    <div class="row-container">stuff4</div>
+    <article class="projects">
+      Come look at my projects!
 
-    <ul class="skill-list">
-      <li>Ruby</li>
-      <li>Rails</li>
-      <li>JavaScript</li>
-      <li>Backone.js</li>
-      <li>JQuery</li>
-      <li>git</li>
-      <li>rspec</li>
-      <li>sql</li>
-      <li>html</li>
-      <li>css</li>
-    </ul>
+
+    <div class='rows-container clearfix'>
+      <div class="row-container">
+        <a href="http://www.reddit-clone-277.herokuapp.com"><div class='reddit-clone-img'></div></a>
+
+          <h5>reddit clone(rails, backbone)</h5>
+            <span>live</span><span>github link</span>
+
+          <p>
+            uitilize rails and backbone to create one page app that has basic functionalities of reddit.
+            including all crud features subreddits creation, crud for post. Within each post, you can make nested commnet.
+            morever, there are social feature like upvote and downvote. Plus geolocation tracking for each post.
+          </p>
+
+
+      </div>
+      <div class="row-container">
+        <h5>active record lite(ruby)</h5>
+        <span>live</span><span>github link</span>
+        <p>
+          cloned active record with ruby metaprogramming
+        </p>
+      </div>
+      <div class="row-container">
+        <h5>asteroid</h5>
+        <span>live</span><span>github link</span>
+        <img src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png">
+        <p>
+          maybe when it's eventually fix it will be on here.
+        </p>
+      </div>
+      <div class="row-container">
+        <h5>trello clone</h5>
+        <p>
+          maybe when it's eventually fix it will be on here.
+        </p>
+      </div>
+
+      <div class="row-container">
+        <h5>node chat room?<a href="https://github.com/TNHuang/ChatRoomApp.git"></a></h5>
+        <p>
+          technically is that even consider a project?
+        </p>
+      </div>
+
+      <div class="row-container">
+        <h5>chess well technically it
+          s checker<a href="https://github.com/TNHuang/ChatRoomApp.git"></a></h5>
+        <img src="https://31.media.tumblr.com/b1c7ea92deb8424843eca6b75ab3a517/tumblr_inline_nc4g8pUilu1smaldr.png">
+        <p>
+          technically is that even consider a project?
+        </p>
+      </div>
+    </div>
+
+  </article>
+
+  <article class="experience">
+    experience blagh balg
+
+  </article>
+
   </section>
 
 
+</section>
+
+<section class='contact-me-container'>
+  <form action="action mailer stuff" class="clearfix">
+
+    <table class='mail-info-container'>
+      <tr>
+        <td>
+          <label for="email">email address</label>
+        </td>
+        <td>
+          <input id="email" type="text" name="email" value="">
+        </td>
+
+      </tr>
+      <tr>
+
+        <td>
+          <label for="name">name</label>
+        </td>
+        <td>
+          <input type="text" name="name" value="">
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+          <label for="title">title</label>
+        </td>
+        <td>
+          <input type="text" name="title" value="">
+        </td>
+
+      </tr>
+
+    </table>
+    <div class="mail-content-container">
+      <label for="body">body</label>
+      <input type="text" name="body" value="">
+
+      <input type="submit" value="send mail">
+    </div>
+
+
+  </form>
 </section>
