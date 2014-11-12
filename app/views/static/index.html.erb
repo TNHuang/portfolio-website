@@ -1,16 +1,3 @@
-<header class='header clearfix'>
-  <nav class='header-nav clearfix'>
-    <div class="home-link">home</div>
-    <ul class='header-nav-links'>
-      <li>stuff 1</li>
-      <li>stuff 2</li>
-      <li>stuff 3</li>
-    </ul>
-
-  </nav>
-
-</header>
-
 <section class='main clearfix'>
 
   <section class='sidebar clearfix'>
@@ -21,13 +8,11 @@
     <div class='message-box hidden'>Hi! I'm Kenny Huang, I'm looking forward to working with you! </div>
     <h3>about myself</h3>
     <p>
-      In my previous life, I used to study aerospace engineering.
-      But during my work, my interesting in programming was kindle by frequent work automation assignment.
-      One thing lead to another, I decided to try out web development for real.
+      Aerospace engineer turn rails/backbone developer. whether it's rocket or software, I'll make sure it gets a clean launch!
     </p>
     <div class='contact-container'>
     <h3>contact info</h3>
-    <div class="github-address">github: </div>
+    <div class="github-address">github: https://github.com/TNHuang</div>
     <div><div class='phone-sprite'></div>cell: 516-589-1469</div>
     <div class='email'>khuangtai@gmail.com</div>
     <% src="https://maps.googleapis.com/maps/api/staticmap?&zoom=13&size=200x200&sensor=false&markers=40.706159%2C-73.835001&key=AIzaSyDtlCO4voB02BO4bKGZgy2hXj2iXUhb5uM" %>
@@ -36,7 +21,7 @@
     <div>Kew Gardens, NY 11415</div>
     <div><img src="<%= src %>" class='contact-location'/></div>
       <ul class="skill-list">
-        skills:
+        <!-- skills:
         <li>Ruby</li>
         <li>Rails</li>
         <li>JavaScript</li>
@@ -46,7 +31,7 @@
         <li>rspec</li>
         <li>sql</li>
         <li>html</li>
-        <li>css</li>
+        <li>css</li> -->
       </ul>
     </div>
   </section>
@@ -54,66 +39,83 @@
 
   <section class="mainbar">
     <article class="projects">
-      Come look at my projects!
+
+        <div id="carrousel">
+          <ul class="clearfix">
+            <li >
+              <div class='project-name'>
+                reddit clone
+              </div>
+
+              <a href="http://www.reddit-clone-277.com">live</a>
+              <a href="https://github.com/TNHuang/Final-Project-Reddit-Clone">github</a>
+              <div class='reddit-clone-img'></div>
+              <div class='project-description'>
+                Recreate reddit. Pre-fetched comments to prevent N+1 query. Customized recursive jbuilder partial to organize nested comments. Utilized polymorphic association to extend voting capbility to subs, post and comment. Additional features include mutli-model search using pg-search, live reddit chat using pusher gem, geo-location post tagging using geocoder.
+              </div>
+            </li>
+            <li >
+              <div class='project-name'>
+                asteroid
+              </div>
+
+              <a href="http://www.reddit-clone-277.com">live</a>
+              <a href="https://github.com/TNHuang/Final-Project-Reddit-Clone">github</a>
+              <img class='project-img' src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png">
+              <div class='project-description'>
+
+              Recreation the all time favorite game of the 1980 usig javascript and canvas element.
+              Customized event handler allow player using keyboard to navigate the canvas element.
+              Each asteroids can collide with each other, it's a classic N-body problem. Utilized bound range approximation before perform more expensive but more accuracte collusion check.
+              </div>
+            </li>
+            <li >
+              <div class='project-name'>
+                Trello clone
+              </div>
+
+
+              <a href="https://github.com/TNHuang/TrelloClone">github</a>
+              <img class='project-img' src="<%= asset_path('trelloClone.png') %>">
+              <div class='project-description'>
+                  recreation of the popular goal tracking website trello uitilized using Backbone colleciton, model and JQuery UI.
+              </div>
+            </li>
+            <li >
+              <div class='project-name'>
+                Chess (Ruby)
+              </div>
+
+              <a href="https://github.com/TNHuang/W2d2-chess">github</a>
+              <img class='project-img' src="<%= asset_path('chess.png') %>">
+              <div class='project-description'>
+                  Construction of chess board game utilizing ruby language.
+              </div>
+            </li>
+            <li >
+              <div class='project-name'>
+                Active Record Lite (Ruby)
+              </div>
+
+
+              <a href="https://github.com/TNHuang/Active-Record-lite/tree/master/active_record_lite/skeleton">github</a>
+              <img class='project-img' src="http://guides.rubyonrails.org/images/has_many.png">
+              <div class='project-description'>
+                  Creating Active Record lite assoications using ruby meta-programming.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="carrousel-nav">
+          <span class="previous">Previous</span> &mdash;
+          <strong class="number">1 / 5</strong> &mdash;
+          <span class="next">Next</span>
+        </div>
 
 
     <div class='rows-container clearfix'>
-      <div class="row-container">
-        <a href="http://www.reddit-clone-277.herokuapp.com"><div class='reddit-clone-img'></div></a>
 
-          <h5>reddit clone(rails, backbone)</h5>
-            <a hre='livewebsite-link'>live</a> <a href='githublink'>github link</a>
-          <p>
-            it's a clone of the popular information aggrevator webiste, Reddit.
-            It utilize rubys on rails
-            and backbone.js to create a single page app that CRUD operation
-            with subreddits, posts and comments.
-            User can search for both subreddits and post that contain search
-            keyword. In addition, each post has geolocation tracking enabled.
-          </p>
-
-
-      </div>
-      <div class="row-container">
-        <h5>active record lite(ruby)</h5>
-        <a hre='livewebsite-link'>live</a> <a href='githublink'>github link</a>
-        <p>
-          cloned active record association with ruby metalprogramming.
-          Method missing allow flexible mass assignment to new and unknown variable.
-
-        </p>
-      </div>
-      <div class="row-container">
-        <h5>asteroid</h5>
-        <span>live</span><span>github link</span>
-        <img src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png">
-        <p>
-          Recreation the all time favorite game of the 1980 usig javascript and canvas element.
-          Each element contain collusion detection. It's a classic N body.
-        </p>
-      </div>
-      <div class="row-container">
-        <h5>trello clone</h5>
-        <p>
-          recreation of the popular goal tracking website trello uitilized using Backbone colleciton, model and JQuery UI.
-        </p>
-      </div>
-
-      <div class="row-container">
-        <h5>node chat room?<a href="https://github.com/TNHuang/ChatRoomApp.git"></a></h5>
-        <p>
-          Baisc chat room chat that allow live update between users uitilize Node.js.
-        </p>
-      </div>
-
-      <div class="row-container">
-        <h5>chess(ruby)
-          <a href="">githublink</a></h5>
-        <img src="https://31.media.tumblr.com/b1c7ea92deb8424843eca6b75ab3a517/tumblr_inline_nc4g8pUilu1smaldr.png">
-        <p>
-          Construction of chess board game utilizing ruby language.
-        </p>
-      </div>
     </div>
 
   </article>

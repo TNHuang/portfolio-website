@@ -1,0 +1,85 @@
+<div class="row-container">
+  <a href="http://www.reddit-clone-277.com"><div class='reddit-clone-img'></div></a>
+
+    <h5>reddit clone(rails, backbone)</h5>
+      <a hre='livewebsite-link'>live</a> <a href='githublink'>github link</a>
+    <p>
+      it's a clone of the popular information aggrevator webiste, Reddit.
+      It utilize rubys on rails
+      and backbone.js to create a single page app that CRUD operation
+      with subreddits, posts and comments.
+      User can search for both subreddits and post that contain search
+      keyword. In addition, each post has geolocation tracking enabled.
+    </p>
+
+
+</div>
+<div class="row-container">
+  <h5>active record lite(ruby)</h5>
+  <a hre='livewebsite-link'>live</a> <a href='githublink'>github link</a>
+  <p>
+    cloned active record association with ruby metalprogramming.
+    Method missing allow flexible mass assignment to new and unknown variable.
+
+  </p>
+</div>
+<div class="row-container">
+  <h5>asteroid</h5>
+  <span>live</span><span>github link</span>
+  <img src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png">
+  <p>
+    Recreation the all time favorite game of the 1980 usig javascript and canvas element.
+    Each element contain collusion detection. It's a classic N body.
+  </p>
+</div>
+<div class="row-container">
+  <h5>trello clone</h5>
+  <p>
+    recreation of the popular goal tracking website trello uitilized using Backbone colleciton, model and JQuery UI.
+  </p>
+</div>
+
+<div class="row-container">
+  <h5>node chat room?<a href="https://github.com/TNHuang/ChatRoomApp.git"></a></h5>
+  <p>
+    Baisc chat room chat that allow live update between users uitilize Node.js.
+  </p>
+</div>
+
+<div class="row-container">
+  <h5>chess(ruby)
+    <a href="">githublink</a></h5>
+  <img src="https://31.media.tumblr.com/b1c7ea92deb8424843eca6b75ab3a517/tumblr_inline_nc4g8pUilu1smaldr.png">
+  <p>
+    Construction of chess board game utilizing ruby language.
+  </p>
+</div>
+
+Once upon a time I was an aerospace engineer, although I wasn't a pure programmer back then, my works involve a lot of programming.
+Projects range from PID controller simulation, convex optimization to finite element analysis all utilize software extensively.
+You can see a movement where scientist and engineer try to descretize their model into linear algbera form, such that software can do the heavy lifting.
+Convex optimization in particular, it's literally the embodiement of the human trial and error process.
+The program cacluate the error growth rate between each step then try to navigate in the design space in such way that minize error.
+Anyway I'm getting sidetrack thinking about convex optimization.
+It was at time, my interest in programming was kindle.
+But it wasn't until when one of my manager ask me to program some VBA optimizer for him, then I really start considering it as a career.
+Back then I alwasy thought programming is some sort of esoteric art that require a 4 years degree before you can start write a line of code.
+
+Every step in an engineering process is gradually being replace by software automation. Need to optimze your design? no problem, convex optimization
+Need to analyze the stress of a structure in a complex loading scheme? no problem, Ansys that shit out. Don't know what construction material to pick? CESS selector.
+
+In most other career, the difference between good performer and a bad performer is at most 200% difference. A good taxi driver can at most perform 200% better than the worst taxi driver.
+But for programming, the difference between the best and worst can be several order of magntitude.
+
+
+<li >
+  <div class='project-name'>
+    Chess (Ruby)
+  </div>
+
+  <a href="https://github.com/TNHuang/Final-Project-Reddit-Clone">github</a>
+  <img src="https://31.media.tumblr.com/b1c7ea92deb8424843eca6b75ab3a517/tumblr_inline_nc4g8pUilu1smaldr.png">
+  <div class='project-description'>
+      Construction of chess board game utilizing ruby language.
+  </div>
+</li>
