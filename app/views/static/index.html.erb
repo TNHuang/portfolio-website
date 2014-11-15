@@ -14,9 +14,10 @@
   <article id="about">
     <h3 class="title">About me</h3>
     <p>
-      Hi, I'm Kenny Huang a web developer in New York,
+      Hi, I'm Kenny Huang, a web developer in New York,
       with background in Aerospace Engineering.
       Whether it's a rocket or a website, I'll make sure it gets launch without a hitch!
+      Currently looking for web development work.
     </p>
     <p>
       I have experience in Ruby Rails, Javascript, Backbone.js and Node.js.
@@ -30,72 +31,249 @@
   </article>
 
   <h3 class='title' id="projects">Projects</h3>
-  <section class='project-container'>
-    <h3><a href="http://www.reddit-clone-277.com"><strong>Reddit Clone</strong></a></h3>
-    <div class='project-links'>
-      <a href="https://github.com/TNHuang/Final-Project-Reddit-Clone">github</a>
-    </div>
-    <a href="#" class="image featured"><img class="project-img" src="<%= asset_path('reddit-clone.png') %>" /></a>
-    <p class='description'>
-      A reddit clone with live chat and geo location tagging build in. Built with Rails, and Backbone.js
-    </p>
+  <section class='project-container clearfix'>
+    <section class='left-side right-line'>
+      <h3><a href="http://www.reddit-clone-277.com"><strong>Reddit Clone</strong></a></h3>
 
-    <ul class='features'>
-      <li>Can create, update, and destroy user, subreddits, post or comment</li>
-      <li>Can votes on subreddit, post and comment</li>
-      <li>Automatically scrap an thumbnail image from a submitted link</li>
-      <li>Hand roll user authentication using BCrypt library</li>
-      <li>Pre-fetched comments to prevent N+1 query when rendering post comments</li>
-      <li>Customized recursive JSON builder partial to orangize nested comments</li>
-      <li>Utilized polymorphic assoication to extend a single vote table to associate votes to either subreddit, post, or comment</li>
-      <li>Multi-model search enabled using pg-search</li>
-      <li>Allow live chat lobby in sub reddits index page using Pusher gem</li>
-      <li>Integrate geolcation tagging with post utilize geocoder</li>
-    </ul>
-  </section>
-
-  <section class='project-container'>
-    <h3><a href="#">Asteroid</a></h3>
-    <a href="#" ><img class="project-img" src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png" /></a>
-
-
-
-    <ul class='features'>
-      <p>
-        Asteroid is a hard game about the futility of space exploration
-        Recreation the all time favorite game of the 1980 usig javascript and canvas element.
-      Customized event handler allow player using keyboard to navigate the canvas element.
-      Each asteroids can collide with each other, it's a classic N-body problem. Utilized bound range approximation before perform more expensive but more accuracte collusion check.
+      <div class='image-container'>
+          <img class="project-img small" src="<%= asset_path('reddit-clone.png') %>" />
+          <a href="#reddit-modal" class='image-info hidden'>
+            <span>(ง⌐□ل͜□)ง▄︻̷̿┻̿═━</span>
+          </a>
+      </div>
+      <p class='description'>
+        A reddit clone with live chat and geo location tagging build in. Built with Rails, and Backbone.js
       </p>
-    </ul>
-  </section>
+      <div class='project-links clearfix'>
+        <div class="icon-container github-icon"></div>
+        <a href="https://github.com/TNHuang/Final-Project-Reddit-Clone">github</a>
+      </div>
+      <div class='project-links clearfix'>
+        <div class="icon-container live-icon"></div>
+        <a href="www.reddit-clone-277.com">Live</a>
+      </div>
 
-  <section class='project-container'>
-    <h3><a href="#">Trello Clone</a></h3>
-    <a href="#" ><img class="project-img" src="<%= asset_path('trelloClone.png') %>" /></a>
-    <p>recreation of the popular goal tracking website trello uitilized using Backbone colleciton, model and JQuery UI.</p>
-  </section>
+      <div class='project-modal' id='reddit-modal'>
+        <div>
+            <a href="#close" title='Close' class='close'>&times</a>
+            <img class="project-img" src="<%= asset_path('reddit-clone.png') %>" />
+            <p>
+            </p>
+        </div>
+      </div>
+    </section> <!-- left-side -->
 
-  <section class='project-container'>
-    <h3><a href="#">Chess</a></h3>
-    <a href="#" ><img  class="project-img small" src="<%= asset_path('chess.png') %>" /></a>
-    <p>Construction of chess board game utilizing ruby language</p>
-  </section>
 
-  <section class='project-container'>
-      <h3><a href="#">Active Record lite</a></h3>
-      <a href="#" ><img class="project-img small" src="http://guides.rubyonrails.org/images/has_many.png"/></a>
-      <p>Using ruby meta programming to crate mini version of Active Record assoication and SQL Query</p>
-  </section>
+    <section class='right-side '>
+      <ul class='features'>
+        <li>Can create, update, and destroy user, subreddits, post or comment</li>
+        <li>Can votes on subreddit, post and comment</li>
+        <li>Automatically scrap an thumbnail image from a submitted link</li>
+        <li>Hand roll user authentication using BCrypt library</li>
+        <li>Pre-fetched comments to prevent N+1 query when rendering post comments</li>
+        <li>Customized recursive JSON builder partial to orangize nested comments</li>
+        <li>Utilized polymorphic assoication to extend a single vote table to associate votes to either subreddit, post, or comment</li>
+        <li>Multi-model search enabled using pg-search</li>
+        <li>Allow live chat lobby in sub reddits index page using Pusher gem</li>
+        <li>Integrate geolcation tagging with post utilize geocoder</li>
+      </ul>
+    </section>  <!-- right-side -->
+  </section> <!-- one project end -->
 
-  <section class='project-container'>
-    <h3><a href="#">Snake</a></h3>
-    <a href="#"><img class="project-img small" src="<%= asset_path('snake.png') %>" alt="" /></a>
-    <p>Snake remade using Jacascript and Html display</p>
-  </section>
+  <section class='project-container clearfix'>
+    <section class='right-side left-line'>
+      <h3><a href="#"><strong>Asteroid</strong></a></h3>
+
+      <div class='image-container'>
+          <img class="project-img small" src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png" />
+          <a href="#asteroid-modal" class='image-info hidden'>
+            <span>(ง⌐□ل͜□)ง▄︻̷̿┻̿═━</span>
+          </a>
+      </div>
+      <p class='description'>
+        Remake of the 90s classic Atari game Asteroid, utilizing javascript and canvas element
+      </p>
+      <div class='project-links clearfix'>
+        <div class="icon-container github-icon"></div>
+        <a href="https://github.com/TNHuang/w6d1">github</a>
+      </div>
+      <div class='project-links clearfix'>
+        <div class="icon-container live-icon"></div>
+        <a href="#">no Live :(</a>
+      </div>
+
+      <div class='project-modal' id='asteroid-modal'>
+        <div>
+            <a href="#close" title='Close' class='close'>&times</a>
+            <img class="project-img medium" src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png" />
+            <p>
+            </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class='left-side'>
+      <ul class='features'>
+        <li>Player control a ship that move and shoot bullet</li>
+        <li>Bullet can collide with asteroid and destroy them</li>
+        <li>Player must avoid getting hit by the asteroid</li>
+
+      </ul>
+    </section>  <!-- right-side -->
+  </section> <!-- one project end -->
+
+
+  <section class='project-container clearfix'>
+    <section class='left-side right-line'>
+      <h3><a href="http://www.reddit-clone-277.com"><strong>Trello Clone</strong></a></h3>
+
+      <div class='image-container'>
+          <img class="project-img small" src="<%= asset_path('trelloClone.png') %>" />
+          <a href="#trello-modal" class='image-info hidden'>
+            <span>(ง⌐□ل͜□)ง▄︻̷̿┻̿═━</span>
+          </a>
+      </div>
+      <p class='description'>
+        Cloning of the popular project management website with drag and drop project list and card.
+      </p>
+      <div class='project-links clearfix'>
+        <div class="icon-container github-icon"></div>
+        <a href="https://github.com/TNHuang/TrelloClone">github</a>
+      </div>
+      <div class='project-links clearfix'>
+        <div class="icon-container live-icon"></div>
+        <a href="#">not yet Live!</a>
+      </div>
+
+      <div class='project-modal' id='trello-modal'>
+        <div>
+            <a href="#close" title='Close' class='close'>&times</a>
+            <img class="project-img" src="<%= asset_path('trelloClone.png') %>" />
+            <p>
+            </p>
+        </div>
+      </div>
+    </section> <!-- left-side -->
+    <section class='right-side '>
+      <ul class='features'>
+        <li>Can create, destroy, update board, list and card</li>
+        <li>Board has many list, and each list has many cards</li>
+        <li>Card can be drag and drop across many different list to indicdate the completition rate</li>
+        <li>Hand roll user authentication using BCrypt library</li>
+        <!-- <li>Pre-fetched comments to prevent N+1 query when rendering post comments</li>
+        <li>Customized recursive JSON builder partial to orangize nested comments</li>
+        <li>Utilized polymorphic assoication to extend a single vote table to associate votes to either subreddit, post, or comment</li>
+        <li>Multi-model search enabled using pg-search</li>
+        <li>Allow live chat lobby in sub reddits index page using Pusher gem</li>
+        <li>Integrate geolcation tagging with post utilize geocoder</li> -->
+      </ul>
+    </section>  <!-- right-side -->
+  </section> <!-- project end-->
+
+  <section class='project-container clearfix'>
+    <section class='right-side left-line'>
+      <h3><a href="#"><strong>Snake <>>>>>:>~</strong></a></h3>
+
+      <div class='image-container'>
+          <img class="project-img small" src="<%= asset_path('snake.png') %>" />
+          <a href="#snake-modal" class='image-info hidden'>
+            <span>(ง⌐□ل͜□)ง▄︻̷̿┻̿═━</span>
+          </a>
+      </div>
+      <p class='description'>
+        The popular TI-83 game, Snake, made using javascript and render using html
+      </p>
+      <div class='project-links clearfix'>
+        <div class="icon-container github-icon"></div>
+        <a href="https://github.com/TNHuang/JQuery-Snake">github</a>
+      </div>
+      <div class='project-links clearfix'>
+        <div class="icon-container live-icon"></div>
+        <a href="#">no Live :(</a>
+      </div>
+
+      <div class='project-modal' id='snake-modal'>
+        <div>
+            <a href="#close" title='Close' class='close'>&times</a>
+            <img class="project-img medium" src="<%= asset_path('snake.png') %>" />
+            <p>
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <section class='left-side'>
+      <ul class='features'>
+        <li>Player control a snake using up, right, down, left arrows</li>
+        <li>Snake cannot go out of bound and not intersecting itself</li>
+        <li>Apple randomly pop into the board in empty square</li>
+        <li>When snake eats an apple, it will grow by three segements</li>
+
+      </ul>
+    </section>  <!-- right-side -->
+  </section> <!-- one project end -->
+
+  <section class='project-container clearfix'>
+    <section class='left-side right-line'>
+      <h3><a href="#"><strong>Chess ♞</strong></a></h3>
+
+      <div class='image-container'>
+          <img class="project-img small" src="<%= asset_path('chess.png') %>" />
+          <a href="#chess-modal" class='image-info hidden'>
+            <span>(ง⌐□ل͜□)ง▄︻̷̿┻̿═━</span>
+          </a>
+      </div>
+      <p class='description'>
+        Chess game program in ruby and play from the ruby terminal
+      </p>
+      <div class='project-links clearfix'>
+        <div class="icon-container github-icon"></div>
+        <a href="https://github.com/TNHuang/W2d2-chess">github</a>
+      </div>
+      <div class='project-links clearfix'>
+        <div class="icon-container live-icon"></div>
+        <a href="#">no Live :(</a>
+      </div>
+
+      <div class='project-modal' id='chess-modal'>
+        <div>
+            <a href="#close" title='Close' class='close'>&times</a>
+            <img class="project-img medium" src="<%= asset_path('chess.png') %>" />
+            <p>
+            </p>
+        </div>
+      </div>
+    </section> <!-- left-side -->
+    <section class='right-side '>
+      <ul class='features'>
+        <li>Render the piece on a terminal display using unicode</li>
+        <li>each piece is move via moving enter coordinate</li>
+        <li>possessed turn check to prevent wrong player from taking turn</li>
+        <li>Check and checkmate is automatically determine for player</li>
+        <!-- <li>Pre-fetched comments to prevent N+1 query when rendering post comments</li>
+        <li>Customized recursive JSON builder partial to orangize nested comments</li>
+        <li>Utilized polymorphic assoication to extend a single vote table to associate votes to either subreddit, post, or comment</li>
+        <li>Multi-model search enabled using pg-search</li>
+        <li>Allow live chat lobby in sub reddits index page using Pusher gem</li>
+        <li>Integrate geolcation tagging with post utilize geocoder</li> -->
+      </ul>
+    </section>  <!-- right-side -->
+  </section> <!-- project end-->
+
 
 
   <section class='contact-container'>
-adfadf
+
+    <div class='email-form-container'>
+      <form class="email-form">
+        <input type="text" name="email" value="" class="input">
+        <input type="text" name="name" value="" class="input">
+        <input type="submit" value="Send message">
+        <span class='button clear-message'>Clear Form</span>
+      </form>
+    </div>
+
+
   </section>
 </div>

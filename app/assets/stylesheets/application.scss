@@ -104,7 +104,6 @@ body {
 
 }
 .my-face {
-
   display:block;
   float: left;
   margin-top: -30px;
@@ -133,33 +132,201 @@ body {
 }
 
 strong {
-  color: #06c;
+  color: #fff;
   text-shadow: 1px 1px 10px black;
-  transition: all 1s;
+  transition: color 1s;
 }
 
 strong:hover {
   color: #6c0;
 }
 
+.project-container h3 {
+  margin-top: 0;
+}
 .project-img {
+  position: relative;
   width: 900px;
-  box-shadow: 0 1px 100px 10px #ccc;
+  box-shadow: 0 1px 20px 10px #ccc;
 }
 
+.image-container {
+  position: relative;
+  display: block;
+  float: left;
+  width: 300px;
+}
+
+.relative-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+
+.image-info {
+  cursor: pointer;
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  font-size: 20px;
+  color: white;
+}
+
+.image-info > span {
+  position: absolute;
+  text-shadow: 0 0 5px black;
+  font-height: 100px;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.image-container:hover > .image-info {
+  display: block;
+}
+
+.medium {
+  width: 400px;
+  margin: 20px auto;
+}
 .small {
   width: 300px;
 }
+
 .title {
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.description {
+  display: block;
+  float: left;
 }
 
 .project-links {
-  margin-bottom: 20px;
+  position: relative;
+  margin:0 20px 20px 0;
+  background:#06c;
+  display: block;
+  float: left;
+  height: 30px;
+  padding: 4px 3px;
+  border-radius: 5px;
+  transition: background 0.5s;
 }
 
+.project-links > a {
+  display: inline-block;
+  margin: 5px;
+  color: white;
+}
+
+.project-links:hover {
+  background: #0c6;
+}
+.project-links:hover > a {
+  color: #06c;
+}
+.icon-container {
+  width: 27px;
+  height: 24px;
+  display: block;
+  float: left;
+  background-image: url('social-media-icons.png');
+  background-size: auto 25px;
+}
+
+.github-icon {
+ background-position: -348px 0px;
+}
+.live-icon {
+  background-position: -905px -1px;
+}
+
+.linked-icon {
+  background-position: -273px 0px;
+}
+
+.phone-icon {
+  background-position: -72px 0px;
+}
 .project-container {
-  padding-bottom: 20px;
+  padding: 20px 0;
   border-bottom: 1px solid #ccc;
+
+}
+
+.project-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.project-modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-modal > div {
+  width: 900px;
+  position: relative;
+  // text-align: center;
+  margin: 10% auto;
+  padding: 10px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.close {
+  background: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  text-align: center;
+  top: -12px;
+  right: -12px;
+  width: 24px;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+  background: #00d9ff;
+}
+.right-side {
+  display: block;
+  float: right;
+  width: 425px;
+
+}
+
+.right-line {
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.left-side {
+  display: block;
+  float: left;
+  width: 425px;
+}
+
+.left-line {
+  padding-left: 30px;
+  border-left: 1px solid #ccc;
 }

@@ -4,7 +4,54 @@ https://s3-us-west-2.amazonaws.com/dellamico/images/skills/javascript.png
 https://s3-us-west-2.amazonaws.com/dellamico/images/skills/backbone.png
 https://s3-us-west-2.amazonaws.com/dellamico/images/skills/jquery.jpg -->
 
+<section class='project-container'>
+  <h3><a href="#">Asteroid</a></h3>
 
+  <a href="#asteroid-modal">Open Modal</a>
+  <div class='project-modal' id='asteroid-modal'>
+    <div>
+        <a href="#close" title='Close' class='close'>&times</a>
+
+        <p>
+          This is a sample modal box that can be created during pop up
+        </p>
+    </div>
+  </div>
+  <a href="#" ><img class="project-img small" src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png" /></a>
+
+  <ul class='features'>
+    <p>
+      Asteroid is a hard game about the futility of space exploration
+      Recreation the all time favorite game of the 1980 usig javascript and canvas element.
+    Customized event handler allow player using keyboard to navigate the canvas element.
+    Each asteroids can collide with each other, it's a classic N-body problem. Utilized bound range approximation before perform more expensive but more accuracte collusion check.
+    </p>
+  </ul>
+</section>
+<section class='project-container'>
+  <h3><a href="#">Trello Clone</a></h3>
+  <a href="#" ><img class="project-img small" src="<%= asset_path('trelloClone.png') %>" /></a>
+  <p>recreation of the popular goal tracking website trello uitilized using Backbone colleciton, model and JQuery UI.</p>
+</section>
+
+
+  <section class='project-container'>
+    <h3><a href="#">Chess</a></h3>
+    <a href="#" ><img  class="project-img small" src="<%= asset_path('chess.png') %>" /></a>
+    <p>Construction of chess board game utilizing ruby language</p>
+  </section>
+
+  <section class='project-container'>
+      <h3><a href="#">Active Record lite</a></h3>
+      <a href="#" ><img class="project-img small" src="http://guides.rubyonrails.org/images/has_many.png"/></a>
+      <p>Using ruby meta programming to crate mini version of Active Record assoication and SQL Query</p>
+  </section>
+
+  <section class='project-container'>
+    <h3><a href="#">Snake</a></h3>
+    <a href="#"><img class="project-img small" src="<%= asset_path('snake.png') %>" alt="" /></a>
+    <p>Snake remade using Jacascript and Html display</p>
+  </section>
 
 
 <!-- <header class='header clearfix'>
