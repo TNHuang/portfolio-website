@@ -1,178 +1,101 @@
-<section class='main clearfix'>
+<div class='main'>
+  <section class="title-container clearfix">
+    <div class='pic-container'>
+      <img src="<%= asset_path('kenny-huang.png') %>" class='my-face'/>
+    </div>
+    <section class="name-container">
+      <h1 class='my-name'>KENNY HUANG</h1>
+      <h4 class='by-line'>Rails/Backbone Web Developer</h4>
+    </section>
 
-  <section class='sidebar clearfix'>
-    <h3>kenny huang</h3>
+  </section>
 
 
-    <div class='portrait-img'></div>
-    <div class='message-box hidden'>Hi! I'm Kenny Huang, I'm looking forward to working with you! </div>
-    <h3>about myself</h3>
+  <article id="about">
+    <h3 class="title">About me</h3>
     <p>
-      Aerospace engineer turn rails/backbone developer. whether it's rocket or software, I'll make sure it gets a clean launch!
+      Hi, I'm Kenny Huang a web developer in New York,
+      with background in Aerospace Engineering.
+      Whether it's a rocket or a website, I'll make sure it gets launch without a hitch!
     </p>
-    <div class='contact-container'>
-    <h3>contact info</h3>
-    <div class="github-address">github: https://github.com/TNHuang</div>
-    <div><div class='phone-sprite'></div>cell: 516-589-1469</div>
-    <div class='email'>khuangtai@gmail.com</div>
-    <% src="https://maps.googleapis.com/maps/api/staticmap?&zoom=13&size=200x200&sensor=false&markers=40.706159%2C-73.835001&key=AIzaSyDtlCO4voB02BO4bKGZgy2hXj2iXUhb5uM" %>
+    <p>
+      I have experience in Ruby Rails, Javascript, Backbone.js and Node.js.
+      I have done several projects using rails and several projects using Javascript.
+      It was a pretty interesing experience building a one page website that integrate both rails and backbone at the same time.
+      You should check these <strong><a href="#projcets">projects</a></strong> out!
+    </p>
+    <p>
+      I have interest in programming automous robotic navigation, space exploration and convex optimization.
+    </p>
+  </article>
 
-    <div>8330 118th St Apt 4A</div>
-    <div>Kew Gardens, NY 11415</div>
-    <div><img src="<%= src %>" class='contact-location'/></div>
-      <ul class="skill-list">
-        <!-- skills:
-        <li>Ruby</li>
-        <li>Rails</li>
-        <li>JavaScript</li>
-        <li>Backone.js</li>
-        <li>JQuery</li>
-        <li>git</li>
-        <li>rspec</li>
-        <li>sql</li>
-        <li>html</li>
-        <li>css</li> -->
-      </ul>
+  <h3 class='title' id="projects">Projects</h3>
+  <section class='project-container'>
+    <h3><a href="http://www.reddit-clone-277.com"><strong>Reddit Clone</strong></a></h3>
+    <div class='project-links'>
+      <a href="https://github.com/TNHuang/Final-Project-Reddit-Clone">github</a>
     </div>
+    <a href="#" class="image featured"><img class="project-img" src="<%= asset_path('reddit-clone.png') %>" /></a>
+    <p class='description'>
+      A reddit clone with live chat and geo location tagging build in. Built with Rails, and Backbone.js
+    </p>
+
+    <ul class='features'>
+      <li>Can create, update, and destroy user, subreddits, post or comment</li>
+      <li>Can votes on subreddit, post and comment</li>
+      <li>Automatically scrap an thumbnail image from a submitted link</li>
+      <li>Hand roll user authentication using BCrypt library</li>
+      <li>Pre-fetched comments to prevent N+1 query when rendering post comments</li>
+      <li>Customized recursive JSON builder partial to orangize nested comments</li>
+      <li>Utilized polymorphic assoication to extend a single vote table to associate votes to either subreddit, post, or comment</li>
+      <li>Multi-model search enabled using pg-search</li>
+      <li>Allow live chat lobby in sub reddits index page using Pusher gem</li>
+      <li>Integrate geolcation tagging with post utilize geocoder</li>
+    </ul>
+  </section>
+
+  <section class='project-container'>
+    <h3><a href="#">Asteroid</a></h3>
+    <a href="#" ><img class="project-img" src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png" /></a>
+
+
+
+    <ul class='features'>
+      <p>
+        Asteroid is a hard game about the futility of space exploration
+        Recreation the all time favorite game of the 1980 usig javascript and canvas element.
+      Customized event handler allow player using keyboard to navigate the canvas element.
+      Each asteroids can collide with each other, it's a classic N-body problem. Utilized bound range approximation before perform more expensive but more accuracte collusion check.
+      </p>
+    </ul>
+  </section>
+
+  <section class='project-container'>
+    <h3><a href="#">Trello Clone</a></h3>
+    <a href="#" ><img class="project-img" src="<%= asset_path('trelloClone.png') %>" /></a>
+    <p>recreation of the popular goal tracking website trello uitilized using Backbone colleciton, model and JQuery UI.</p>
+  </section>
+
+  <section class='project-container'>
+    <h3><a href="#">Chess</a></h3>
+    <a href="#" ><img  class="project-img small" src="<%= asset_path('chess.png') %>" /></a>
+    <p>Construction of chess board game utilizing ruby language</p>
+  </section>
+
+  <section class='project-container'>
+      <h3><a href="#">Active Record lite</a></h3>
+      <a href="#" ><img class="project-img small" src="http://guides.rubyonrails.org/images/has_many.png"/></a>
+      <p>Using ruby meta programming to crate mini version of Active Record assoication and SQL Query</p>
+  </section>
+
+  <section class='project-container'>
+    <h3><a href="#">Snake</a></h3>
+    <a href="#"><img class="project-img small" src="<%= asset_path('snake.png') %>" alt="" /></a>
+    <p>Snake remade using Jacascript and Html display</p>
   </section>
 
 
-  <section class="mainbar">
-    <article class="projects">
-
-        <div id="carrousel">
-          <ul class="clearfix">
-            <li >
-              <div class='project-name'>
-                reddit clone
-              </div>
-
-              <a href="http://www.reddit-clone-277.com">live</a>
-              <a href="https://github.com/TNHuang/Final-Project-Reddit-Clone">github</a>
-              <div class='reddit-clone-img'></div>
-              <div class='project-description'>
-                Recreate reddit. Pre-fetched comments to prevent N+1 query. Customized recursive jbuilder partial to organize nested comments. Utilized polymorphic association to extend voting capbility to subs, post and comment. Additional features include mutli-model search using pg-search, live reddit chat using pusher gem, geo-location post tagging using geocoder.
-              </div>
-            </li>
-            <li >
-              <div class='project-name'>
-                asteroid
-              </div>
-
-              <a href="http://www.reddit-clone-277.com">live</a>
-              <a href="https://github.com/TNHuang/Final-Project-Reddit-Clone">github</a>
-              <img class='project-img' src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png">
-              <div class='project-description'>
-
-              Recreation the all time favorite game of the 1980 usig javascript and canvas element.
-              Customized event handler allow player using keyboard to navigate the canvas element.
-              Each asteroids can collide with each other, it's a classic N-body problem. Utilized bound range approximation before perform more expensive but more accuracte collusion check.
-              </div>
-            </li>
-            <li >
-              <div class='project-name'>
-                Trello clone
-              </div>
-
-
-              <a href="https://github.com/TNHuang/TrelloClone">github</a>
-              <img class='project-img' src="<%= asset_path('trelloClone.png') %>">
-              <div class='project-description'>
-                  recreation of the popular goal tracking website trello uitilized using Backbone colleciton, model and JQuery UI.
-              </div>
-            </li>
-            <li >
-              <div class='project-name'>
-                Chess (Ruby)
-              </div>
-
-              <a href="https://github.com/TNHuang/W2d2-chess">github</a>
-              <img class='project-img' src="<%= asset_path('chess.png') %>">
-              <div class='project-description'>
-                  Construction of chess board game utilizing ruby language.
-              </div>
-            </li>
-            <li >
-              <div class='project-name'>
-                Active Record Lite (Ruby)
-              </div>
-
-
-              <a href="https://github.com/TNHuang/Active-Record-lite/tree/master/active_record_lite/skeleton">github</a>
-              <img class='project-img' src="http://guides.rubyonrails.org/images/has_many.png">
-              <div class='project-description'>
-                  Creating Active Record lite assoications using ruby meta-programming.
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div id="carrousel-nav">
-          <span class="previous">Previous</span> &mdash;
-          <strong class="number">1 / 5</strong> &mdash;
-          <span class="next">Next</span>
-        </div>
-
-
-    <div class='rows-container clearfix'>
-
-    </div>
-
-  </article>
-
-  <article class="experience">
-
-
-  </article>
-
+  <section class='contact-container'>
+adfadf
   </section>
-
-
-</section>
-
-<section class='contact-me-container'>
-  <form action="action mailer stuff" class="clearfix">
-
-    <table class='mail-info-container'>
-      <tr>
-        <td>
-          <label for="email">email address</label>
-        </td>
-        <td>
-          <input id="email" type="text" name="email" value="">
-        </td>
-
-      </tr>
-      <tr>
-
-        <td>
-          <label for="name">name</label>
-        </td>
-        <td>
-          <input type="text" name="name" value="">
-        </td>
-
-      </tr>
-
-      <tr>
-
-        <td>
-          <label for="title">title</label>
-        </td>
-        <td>
-          <input type="text" name="title" value="">
-        </td>
-
-      </tr>
-
-    </table>
-    <div class="mail-content-container">
-      <label for="body">body</label>
-      <textarea name='body'></textarea>
-
-      <input type="submit" value="send mail">
-    </div>
-
-
-  </form>
-</section>
+</div>

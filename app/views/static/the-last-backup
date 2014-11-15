@@ -1,0 +1,201 @@
+<div class="wrapper style1 first">
+  <article class="container" id="top">
+    <div class="row">
+      <div class="4u">
+        <span class="image fit"><img class="portrait-img" src="<%= asset_path('kenny-huang.png') %>" alt="" /></span>
+      </div>
+      <div class="8u">
+        <header>
+          <h1>Hi. I'm <strong>Kenny Huang</strong>.</h1>
+        </header>
+        <p>rocket pocket<strong>Miniport</strong>, a rails/ backbone developers <a href="http://n33.co">AJ</a> for <a href="http://html5up.net">HTML5 UP</a> &amp; released under the <a href="http://html5up.net/license">wtf license</a>.</p>
+        <!-- <a href="#work" class="button big scrolly">Learn about what I do for you</a> -->
+      </div>
+    </div>
+  </article>
+</div>
+
+
+
+<!-- Work -->
+  <div class="wrapper style2">
+    <article id="project">
+      <header>
+        <h2>Here's all the stuff I do.</h2>
+        <p>Experiences</p>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="4u">
+            <section class="box style1">
+              <span class="icon featured fa-comments-o">
+                Rails
+              </span>
+              <h3>example probject: rails-lite</h3>
+              <p>recreating light weight version of ruby rails utilized webrick to send http request. </p>
+            </section>
+          </div>
+          <div class="4u">
+            <section class="box style1">
+              <span class="icon featured fa-camera-retro"></span>
+                Node.js
+              <h3>Node.js chat room</h3>
+              <p>Creating live chat room using node.js</p>
+            </section>
+          </div>
+          <div class="4u">
+            <section class="box style1">
+              <span class="icon featured fa-thumbs-o-up"></span>
+              <h3>backbone</h3>
+              <p></p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+        <a href="#portfolio" class="button big scrolly">See some of my recent work</a>
+      </footer>
+    </article>
+  </div>
+
+
+<!-- Portfolio -->
+  <div class="wrapper style3">
+    <article id="portfolio">
+      <header>
+        <h2>Here’s some stuff I made recently.</h2>
+        <p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat lorem ipsum dolore.</p>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="4u">
+            <article class="box style2">
+              <a href="#" class="image featured"><img class="project-img" src="<%= asset_path('reddit-clone.png') %>" /></a>
+              <h3><a href="#">Reddit Clone</a></h3>
+              <div class='project-links'>
+                <a href="http://www.reddit-clone-277.com">live</a>
+                <a href="https://github.com/TNHuang/Final-Project-Reddit-Clone">github</a>
+              </div>
+              <p>Recreate reddit. Pre-fetched comments to prevent N+1 query. Customized recursive jbuilder partial to organize nested comments. Utilized polymorphic association to extend voting capbility to subs, post and comment. Additional features include mutli-model search using pg-search, live reddit chat using pusher gem, geo-location post tagging using geocoder.
+  </p>
+            </article>
+          </div>
+          <div class="4u">
+            <article class="box style2">
+              <a href="#" class="image featured"><img src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png" /></a>
+              <h3><a href="#">Asteroid</a></h3>
+              <p>
+                Asteroid is a hard game about the futility of space exploration
+                Recreation the all time favorite game of the 1980 usig javascript and canvas element.
+              Customized event handler allow player using keyboard to navigate the canvas element.
+              Each asteroids can collide with each other, it's a classic N-body problem. Utilized bound range approximation before perform more expensive but more accuracte collusion check.
+              </p>
+            </article>
+          </div>
+          <div class="4u">
+            <article class="box style2">
+              <a href="#" class="image featured"><img src="<%= asset_path('trelloClone.png') %>" /></a>
+              <h3><a href="#">Trello Clone</a></h3>
+              <p>recreation of the popular goal tracking website trello uitilized using Backbone colleciton, model and JQuery UI.</p>
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <div class="4u">
+            <article class="box style2">
+              <a href="#" class="image featured"><img src="<%= asset_path('chess.png') %>" /></a>
+              <h3><a href="#">Chess</a></h3>
+              <p>Construction of chess board game utilizing ruby language</p>
+            </article>
+          </div>
+          <div class="4u">
+            <article class="box style2">
+              <a href="#" class="image featured"><img src="http://guides.rubyonrails.org/images/has_many.png"/></a>
+              <h3><a href="#">Active Record lite</a></h3>
+              <p>Using ruby meta programming to crate mini version of Active Record assoication and SQL Query</p>
+            </article>
+          </div>
+          <div class="4u">
+            <article class="box style2">
+              <a href="#" class="image featured"><img src="<%= asset_path('snake.png') %>" alt="" /></a>
+              <h3><a href="#">Snake</a></h3>
+              <p>Snake remade using Jacascript and Html display</p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+        <a href="#contact" class="button big scrolly">Get in touch with me</a>
+      </footer>
+    </article>
+  </div>
+
+  <!-- Contact -->
+    <div class="wrapper style4">
+      <article id="contact" class="container 75%">
+        <header>
+          <h2>Have me make stuff for you.</h2>
+          <p>Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.</p>
+        </header>
+        <div>
+          <div class="row">
+            <div class="12u">
+              <form method="post" action="#">
+                <div>
+                  <div class="row">
+                    <div class="6u">
+                      <input type="text" name="name" id="name" placeholder="Name" />
+                    </div>
+                    <div class="6u">
+                      <input type="text" name="email" id="email" placeholder="Email" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="12u">
+                      <input type="text" name="subject" id="subject" placeholder="Subject" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="12u">
+                      <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                  <div class="row 200%">
+                    <div class="12u">
+                      <ul class="actions">
+                        <li><input type="submit" value="Send Message" /></li>
+                        <li><input type="reset" value="Clear Form" class="alt" /></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="12u">
+              <hr />
+              <h3>Find me on ...</h3>
+              <ul class="social">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
+                <li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+                <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+                <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+
+              </ul>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <footer>
+          <ul id="copyright">
+            <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </footer>
+      </article>
+    </div>

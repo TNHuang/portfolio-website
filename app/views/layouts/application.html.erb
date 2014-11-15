@@ -13,6 +13,19 @@
 </head>
 <body>
 
+<nav id="nav">
+  <ul class="container  clearfix ">
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contacts</a></li>
+    <!-- <li><img src="<%= asset_path('social-media-icons.png') %>" style="opacity:0.8"></li> -->
+  </ul>
+
+
+</nav>
+
 <%= yield %>
 
 
@@ -31,7 +44,7 @@
       $('.next').on("click", function(){
         currentIndex += 1;
         if (currentIndex === projectsCount ){
-            currentIndex = projectsCount  -1;
+            currentIndex = 0;
         }
         move();
       });
@@ -40,7 +53,7 @@
       $('.previous').on("click", function(){
         currentIndex -= 1;
         if (currentIndex < 0){
-            currentIndex = 0;
+            currentIndex = panes.length - 1;
         }
         move();
       });
