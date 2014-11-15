@@ -22,6 +22,7 @@ html, body, div, section, span, li, ul, a {
   text-decoration: none;
   list-style: none;
 }
+
 .block{
   display: block;
 }
@@ -191,7 +192,7 @@ strong:hover {
 }
 
 .medium {
-  width: 400px;
+  width: 500px;
   margin: 20px auto;
 }
 .small {
@@ -246,6 +247,7 @@ strong:hover {
  background-position: -348px 0px;
 }
 .live-icon {
+  margin-top: 3px;
   background-position: -905px -1px;
 }
 
@@ -259,9 +261,11 @@ strong:hover {
 .project-container {
   padding: 20px 0;
   border-bottom: 1px solid #ccc;
-
 }
 
+.features > li {
+  margin-bottom: 10px;
+}
 .project-modal {
   position: fixed;
   top: 0;
@@ -306,7 +310,8 @@ strong:hover {
   box-shadow: 1px 1px 3px #000;
 }
 .close:hover {
-  background: #00d9ff;
+  background: #06c;
+  // background: #00d9ff;
 }
 .right-side {
   display: block;
@@ -329,4 +334,40 @@ strong:hover {
 .left-line {
   padding-left: 30px;
   border-left: 1px solid #ccc;
+}
+
+.center-align {
+  text-align: center;
+}
+.email-container {
+  display: block;
+  width: 860px;
+  margin: 0 auto;
+}
+ .input {
+  padding:20px;
+  margin-bottom: 20px;
+  width: 380px;
+  float: left;
+  font-size: 23px;
+  background: #F6F7F9;
+  color: #888888;
+  border: 1px solid #888888;
+  border-radius: 0.35em;
+  transition: all 0.5s;
+}
+.input:first-of-type {
+  margin-right: 16px;
+}
+.input:focus {
+  background: white;
+}
+
+.message{
+  float: left;
+  width: 820px;
+  border-radius: 0.35em;
+  border: 1px solid #888;
+  font-size: 23px;
+  padding: 20px;
 }

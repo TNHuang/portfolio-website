@@ -32,7 +32,7 @@
 
   <h3 class='title' id="projects">Projects</h3>
   <section class='project-container clearfix'>
-    <section class='left-side right-line'>
+    <section class='left-side'>
       <h3><a href="http://www.reddit-clone-277.com"><strong>Reddit Clone</strong></a></h3>
 
       <div class='image-container'>
@@ -64,7 +64,7 @@
     </section> <!-- left-side -->
 
 
-    <section class='right-side '>
+    <section class='right-side left-line'>
       <ul class='features'>
         <li>Can create, update, and destroy user, subreddits, post or comment</li>
         <li>Can votes on subreddit, post and comment</li>
@@ -233,9 +233,9 @@
       </div>
       <div class='project-links clearfix'>
         <div class="icon-container live-icon"></div>
-        <a href="#">no Live :(</a>
+        <a id='contact' href="#">no Live :(</a>
       </div>
-
+      <!-- put contact id here so link position scroll to the correct position -->
       <div class='project-modal' id='chess-modal'>
         <div>
             <a href="#close" title='Close' class='close'>&times</a>
@@ -263,12 +263,15 @@
 
 
 
-  <section class='contact-container'>
+  <section class='project-container clearfix email' >
+    <h1 class='center-align'>Contact ☏</h1>
+    <h3 class='center-align'>I'm avalible to contact. Message me if you want to build your idea</h3>
 
-    <div class='email-form-container'>
-      <form class="email-form">
-        <input type="text" name="email" value="" class="input">
-        <input type="text" name="name" value="" class="input">
+    <div class='email-container '>
+        <form class="email-form">
+        <input type="text" name="name" value="" class="input" placeholder="Name">
+        <input type="text" name="email" value="" class="input" placeholder="Email">
+        <textarea name="message" rows="8" cols="40" placeholder="Message" class='input message'></textarea>
         <input type="submit" value="Send message">
         <span class='button clear-message'>Clear Form</span>
       </form>
