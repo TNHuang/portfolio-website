@@ -160,7 +160,7 @@
         <li>Can create, destroy, update board, list and card</li>
         <li>Board has many list, and each list has many cards</li>
         <li>Card can be drag and drop across many different list to indicdate the completition rate</li>
-        <li>Hand roll user authentication using BCrypt library</li>
+    
         <!-- <li>Pre-fetched comments to prevent N+1 query when rendering post comments</li>
         <li>Customized recursive JSON builder partial to orangize nested comments</li>
         <li>Utilized polymorphic assoication to extend a single vote table to associate votes to either subreddit, post, or comment</li>
@@ -279,6 +279,7 @@
           </div>
         </form>
         <p>
+
           contact info:
           <div class='project-links clearfix'>
             <div class="icon-container github-icon"></div>
@@ -317,3 +318,11 @@
   </section>
 
 </div>
+<script>
+  $(function () {
+    $('.clear-message').on('click', function(event){
+      event.preventDefault();
+      $(".input").val("");
+    });
+  });
+</script>
