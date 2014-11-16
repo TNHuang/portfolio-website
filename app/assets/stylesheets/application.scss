@@ -183,7 +183,7 @@ strong:hover {
   left: 0;
   background: #000;
   opacity: 0.5;
-  font-size: 20px;
+  font-size: 17px;
   color: white;
 }
 
@@ -252,6 +252,26 @@ strong:hover {
   float: left;
   background-image: url('social-media-icons.png');
   background-size: auto 25px;
+}
+
+.icon-container-heroku {
+  position: relative;
+  width: 27px;
+  height: 24px;
+  display: block;
+  float: left;
+  overflow:hidden;
+}
+
+.github-icon-heroku {
+  position: absolute;
+  height: 25px;
+  width: auto;
+  left: -348px;
+}
+icon-container-heroku:active {
+  top: 3px;
+  box-shadow: none;
 }
 
 .github-icon {
