@@ -10,8 +10,8 @@ class StaticController < ApplicationController
 
     msg = JobMailer.send_mail(@sender_name, @sender_email, @message)
     msg.deliver!
-
-    redirect_to :back
+    flash[:notice] = "Your mail was sent!"
+    redirect_to root_url
   end
 
   private

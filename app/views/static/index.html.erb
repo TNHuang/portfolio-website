@@ -26,7 +26,8 @@
       Currently looking for web development work.
     </p>
     <p>
-      I have experience in Ruby Rails, Javascript, Backbone.js and Node.js. <br>
+      My primay skills includes Ruby, Rails, Javascript, Backbone.js, Jquery, Git, RSpec, SQL, HTML,
+CSS, TDD, CSS, Node.js.<br>
       I have done several projects using rails and several projects using Javascript.
       It was a pretty interesting experience combining both rails and backbone to create a one page website.
       You should check these <strong><a href="#projcets">projects</a></strong> out!
@@ -294,8 +295,8 @@
 
     </div>
     <div class='map-container'>
-      <% src="https://maps.googleapis.com/maps/api/staticmap?&zoom=13&size=200x200&sensor=false&markers=40.706159%2C-73.835001&key=AIzaSyDtlCO4voB02BO4bKGZgy2hXj2iXUhb5uM" %>
-      <img src="<%= src %>" alt="" />
+
+      <img src="https://maps.googleapis.com/maps/api/staticmap?&zoom=13&size=200x200&sensor=false&markers=40.706159%2C-73.835001&key=<%= ENV['GOOGLEMAP_API'] %>" alt="" />
     </div>
     <p >
       <div class='project-links clearfix'>

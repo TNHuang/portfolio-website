@@ -20,10 +20,21 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#contact">Contacts</a></li>
+    <% if flash[:notice] %>
+    <li class="notice">
+        <%= flash[:notice] %>
+    </li>
+    <% end %>
+
     <!-- <li><img src="<%= asset_path('social-media-icons.png') %>" style="opacity:0.8"></li> -->
   </ul>
-
-
+  <script>
+    $(function() {
+      setTimeout(function(){
+      $('.notice').slideUp(500);
+      }, 1000);
+     });
+  </script>
 </nav>
 
 <%= yield %>
