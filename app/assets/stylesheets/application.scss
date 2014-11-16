@@ -243,35 +243,65 @@ strong:hover {
   background: #0c6;
 }
 .project-links:hover > a {
+  cursor: pointer;
   color: #06c;
 }
-.icon-container {
-  width: 27px;
-  height: 24px;
-  display: block;
-  float: left;
-  background-image: url('social-media-icons.png');
-  background-size: auto 25px;
+.project-links:active {
+  top: 3px;
+  box-shadow: none;
 }
 
 .icon-container-heroku {
   position: relative;
   width: 27px;
-  height: 24px;
+  height: 26px;
   display: block;
   float: left;
   overflow:hidden;
 }
-
-.github-icon-heroku {
+.icon {
   position: absolute;
   height: 25px;
-  width: auto;
+}
+.github-icon-heroku {
   left: -348px;
 }
-icon-container-heroku:active {
-  top: 3px;
-  box-shadow: none;
+
+.live-icon-heroku {
+  margin-top: 2px;
+  top: -1px;
+  left: -155px;
+}
+
+.linkedin-icon-heroku {
+  left: -273px;
+}
+.twitter-icon-heroku {
+  left: -233px;
+}
+.facebook-icon-heroku {
+  left: -192px;
+}
+.email-icon-heroku {
+  left: -113px;
+}
+.map-icon-heroku {
+  left: -34px;
+  top: 1px;
+}
+.phone-icon-heroku {
+  left: -72px;
+}
+
+
+//the origin icons container before heroku icons
+.icon-container {
+  width: 27px;
+  height: 26px;
+  display: block;
+  float: left;
+  background-image: url('social-media-icons.png');
+  background-size: auto 25px;
 }
 
 .github-icon {
@@ -279,10 +309,10 @@ icon-container-heroku:active {
 }
 .live-icon {
   margin-top: 3px;
-  background-position: -905px -1px;
+  background-position: -155px -1px;
 }
 
-.linked-icon {
+.linkedin-icon {
   background-position: -273px 0px;
 }
 .twitter-icon {
@@ -301,6 +331,9 @@ icon-container-heroku:active {
 .phone-icon {
   background-position: -72px 0px;
 }
+
+//original icon end
+
 .project-container {
   padding: 20px 0;
   border-bottom: 1px solid #ccc;
