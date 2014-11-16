@@ -230,7 +230,7 @@ strong:hover {
   padding: 4px 3px;
   border-radius: 5px;
   box-shadow: 0 3px 1px 1px #ccc;
-  transition: background 0.5s;
+  transition: all 0.5s;
 }
 
 .project-links > a {
@@ -471,4 +471,10 @@ strong:hover {
 }
 .form-button:first-of-type {
   margin-right: 20px;
+}
+
+.map-container > img{
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
 }
