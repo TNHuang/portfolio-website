@@ -5,7 +5,7 @@ class JobMailer < ActionMailer::Base
     @sender = {:name => sender_name, :email => sender_email, :message => message}
     mail(
       from: @sender[:email],
-      to: "www.khuangtai@gmail.com",
+      to: "khuangtai@gmail.com",
       subject: "An employer #{@sender[:name]} has contact you with a job information"
     )
   end
