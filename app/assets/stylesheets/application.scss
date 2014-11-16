@@ -23,6 +23,15 @@ html, body, div, section, span, li, ul, a {
   list-style: none;
 }
 
+form, input, button {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  font: inherit;
+  outline: none;
+}
+
 .block{
   display: block;
 }
@@ -76,6 +85,7 @@ body {
   color: #06c;
   background: white;
 }
+
 //
 .main {
   margin: 0px auto;
@@ -219,6 +229,7 @@ strong:hover {
   height: 30px;
   padding: 4px 3px;
   border-radius: 5px;
+  box-shadow: 0 3px 1px 1px #ccc;
   transition: background 0.5s;
 }
 
@@ -254,7 +265,19 @@ strong:hover {
 .linked-icon {
   background-position: -273px 0px;
 }
-
+.twitter-icon {
+  background-position: -233px 0px;
+}
+.facebook-icon {
+  background-position: -192px 0px;
+}
+.email-icon {
+  background-position: -113px 0px;
+}
+.map-icon {
+  margin-top: 3px;
+  background-position: -34px 0px;
+}
 .phone-icon {
   background-position: -72px 0px;
 }
@@ -265,6 +288,7 @@ strong:hover {
 
 .features > li {
   margin-bottom: 10px;
+  font-size: 14px;
 }
 .project-modal {
   position: fixed;
@@ -317,7 +341,6 @@ strong:hover {
   display: block;
   float: right;
   width: 425px;
-
 }
 
 .right-line {
@@ -370,4 +393,29 @@ strong:hover {
   border: 1px solid #888;
   font-size: 23px;
   padding: 20px;
+}
+
+.buttons-container {
+  width: 400px;
+  margin: 0 auto;
+}
+.form-button {
+  position: relative;
+  background: #06c;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 23px;
+  box-shadow: 0 3px 1px 1px #ccc;
+  transition: background 0.5s;
+}
+.form-button:hover {
+  background: #0c6;
+}
+.form-button:active {
+  top: 3px;
+  box-shadow: none;
+}
+.form-button:first-of-type {
+  margin-right: 20px;
 }
