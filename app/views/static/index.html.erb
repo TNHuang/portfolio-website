@@ -266,11 +266,12 @@
     <h3 class='center-align'>Send me an email if you want to build your idea!</h3>
 
     <div class='email-container '>
-        <form class="email-form">
-          <input type="text" name="name" value="" class="input" placeholder="Name">
-          <input type="text" name="email" value="" class="input" placeholder="Email">
+        <form class="email-form" action="/mail" method="POST">
+          <%= form_auth %>
+          <input type="text" name="sender_name" value="" class="input" placeholder="Name">
+          <input type="text" name="sender_email" value="" class="input" placeholder="Email">
           <textarea name="message" rows="8" cols="40" placeholder="Message" class='input message'></textarea>
-
+    
           <div class='buttons-container'>
             <input type="submit" value="Send Message" class='form-button'>
             <button class='form-button clear-message'>Clear Form</button>

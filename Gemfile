@@ -29,7 +29,8 @@ gem 'rails_12factor'
 gem 'themes_on_rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem "letter_opener", :group => :development
+gem "figaro"
 # Use unicorn as the app server
 # gem 'unicorn'
 
