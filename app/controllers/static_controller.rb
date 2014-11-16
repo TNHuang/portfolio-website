@@ -9,8 +9,9 @@ class StaticController < ApplicationController
     @message = params[:message]
 
     msg = JobMailer.send_mail(@sender_name, @sender_email, @message)
-    msg.deliver
-    render :index
+    msg.deliver!
+
+    redirect_to :back
   end
 
   private

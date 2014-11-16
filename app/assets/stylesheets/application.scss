@@ -379,13 +379,13 @@ strong:hover {
   border-radius: 0.35em;
   transition: all 0.5s;
 }
-.input:first-of-type {
-  margin-right: 100px;
-}
+
 .input:focus {
   background: white;
 }
-
+.input:first-of-type {
+  margin-right: 16px;
+}
 .message{
   float: left;
   width: 820px;
