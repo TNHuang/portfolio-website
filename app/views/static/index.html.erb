@@ -97,7 +97,7 @@ CSS, TDD, CSS, Node.js.<br>
       <h3><a href="#"><strong>Asteroid</strong></a></h3>
 
       <div class='image-container'>
-          <img class="project-img small" src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png" />
+          <img class="project-img small" src="<%= asset_path('asteroid.png') %>" />
           <a href="#asteroid-modal" class='image-info hidden'>
             <span>Click for larger size</span>
           </a>
@@ -109,7 +109,7 @@ CSS, TDD, CSS, Node.js.<br>
         <div class='icon-container-heroku'>
           <img class='github-icon-heroku icon' src="<%= asset_path('social-media-icons.png') %>" />
         </div>
-        <a href="https://github.com/TNHuang/w6d1">github</a>
+        <a href="https://github.com/TNHuang/Asteroids">github</a>
       </div>
       <div class='project-links clearfix'>
         <div class='icon-container-heroku'>
@@ -121,7 +121,7 @@ CSS, TDD, CSS, Node.js.<br>
       <div class='project-modal' id='asteroid-modal'>
         <div>
             <a href="#close" title='Close' class='close'>&times</a>
-            <img class="project-img medium" src="https://31.media.tumblr.com/70f4550c1d405782e000866bb329ed66/tumblr_inline_ndewoueXU81smaldr.png" />
+            <img class="project-img" src="<%= asset_path('asteroid.png') %>"  />
         </div>
       </div>
     </section>
