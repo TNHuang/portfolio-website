@@ -55,6 +55,17 @@ body {
   display: block;
   clear: both;
 }
+.contacts-container {
+  width: 340px;
+  display: block;
+  float: right;
+}
+
+.contacts-container li {
+  margin-top: 10px;
+  display: block;
+  float: left;
+}
 
 #nav  {
   position: fixed;
@@ -130,6 +141,7 @@ body {
   opacity: 1;
   text-shadow: 0px 0px 5px #ccc;
 }
+
 .my-name {
   display: block;
   color: #06c;
@@ -484,4 +496,7 @@ strong:hover {
   font-size: 40px;
   padding: 20px;
   background: #0c6;
+  color: white;
+  border: 3px solid #0c6;
+  border-radius: 5px;
 }
