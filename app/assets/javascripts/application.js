@@ -18,6 +18,6 @@
 //= require ./asteroidGame/movingObject.js
 //= require ./asteroidGame/asteroid.js
 //= require_tree ./asteroidGame
-//= require_tree ./snakeGame
+
 //= require keymaster.js
 //= require_tree .
