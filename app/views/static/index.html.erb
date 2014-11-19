@@ -117,7 +117,7 @@ CSS, TDD, CSS, Node.js.<br><br>
         <div class='icon-container-heroku'>
           <img class='live-icon-heroku icon' src="<%= asset_path('social-media-icons.png') %>" />
         </div>
-        <a href="#">no yet Live :(</a>
+        <a href="#asteroid-modal" class="open-live">Live</a>
       </div>
 
       <div class='project-modal' id='asteroid-modal'>
@@ -393,17 +393,18 @@ CSS, TDD, CSS, Node.js.<br><br>
 </div>
 <script>
   $(function () {
-    
+
     currentY = 0;
     $('.clear-message').on('click', function(event){
       event.preventDefault();
       $(".input").val("");
     });
 
-    $(".image-container").click(function(event){
+    $(".image-container, .open-live").click(function(event){
       currentY = $(window).scrollTop();
-
-      $(".main").addClass('fixed');
+      if ( $(".main").hasClass('fixed') === false){
+        $(".main").addClass('fixed');
+      }
 
     });
     $(".close, .container > li").click( function(event){
