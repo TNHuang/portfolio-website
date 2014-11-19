@@ -1,0 +1,41 @@
+div#asteroids-game{
+  #asteroids-game {
+    margin: 0;
+    background-image: url("nasa-mission-control.jpg") !important;
+    background-size: 100% 100%;
+  }
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  canvas {
+      background-image: url("background.jpg");
+      background-size: cover;
+      margin: 0 auto;
+      display: block;
+      border: 3px solid orange;
+  }
+  h2, h3 {
+    text-align: center;
+  }
+  h2:hover{
+    color: white;
+  }
+  .titles-container {
+    text-align:center;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: #ccc;
+  }
+
+  h4 {
+    width: 50%;
+    display: block;
+    float: left;
+  }
+
+}

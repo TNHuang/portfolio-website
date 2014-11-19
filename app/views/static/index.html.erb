@@ -70,7 +70,7 @@ CSS, TDD, CSS, Node.js.<br><br>
       </div>
 
       <div class='project-modal' id='reddit-modal'>
-        <div>
+        <div class="non-embedded">
             <a href="#close" title='Close' class='close'>&times</a>
             <img class="project-img" src="<%= asset_path('reddit-clone.png') %>" />
         </div>
@@ -123,7 +123,11 @@ CSS, TDD, CSS, Node.js.<br><br>
       <div class='project-modal' id='asteroid-modal'>
         <div>
             <a href="#close" title='Close' class='close'>&times</a>
-            <img class="project-img" src="<%= asset_path('asteroid.png') %>"  />
+              <div id="asteroids-game">
+                <%= render "games/asteroids" %>
+              </div>
+
+            <!-- <img class="project-img" src="<%= asset_path('asteroid.png') %>"  /> -->
         </div>
       </div>
     </section>
@@ -172,8 +176,9 @@ CSS, TDD, CSS, Node.js.<br><br>
       </div>
 
       <div class='project-modal' id='trello-modal'>
-        <div>
+        <div class="non-embedded">
             <a href="#close" title='Close' class='close'>&times</a>
+
             <img class="project-img" src="<%= asset_path('trelloClone.png') %>" />
         </div>
       </div>
@@ -221,7 +226,7 @@ CSS, TDD, CSS, Node.js.<br><br>
       </div>
 
       <div class='project-modal' id='snake-modal'>
-        <div>
+        <div class="non-embedded">
             <a href="#close" title='Close' class='close'>&times</a>
             <img class="project-img medium" src="<%= asset_path('snake.png') %>" />
         </div>
@@ -266,7 +271,7 @@ CSS, TDD, CSS, Node.js.<br><br>
       </div>
       <!-- put contact id here so link position scroll to the correct position -->
       <div class='project-modal' id='chess-modal'>
-        <div>
+        <div class="non-embedded">
             <a href="#close" title='Close' class='close'>&times</a>
             <img class="project-img medium" src="<%= asset_path('chess.png') %>" />
         </div>
@@ -388,9 +393,22 @@ CSS, TDD, CSS, Node.js.<br><br>
 </div>
 <script>
   $(function () {
+    currentY = 0;
     $('.clear-message').on('click', function(event){
       event.preventDefault();
       $(".input").val("");
     });
+
+    $(".image-container").click(function(event){
+      currentY = $(window).scrollTop();
+
+      $(".main").addClass('fixed');
+
+    });
+    $(".close, .container > li").click( function(event){
+      $(".main").removeClass('fixed');
+      $('body, html').scrollTop(currentY);
+    });
+
   });
 </script>

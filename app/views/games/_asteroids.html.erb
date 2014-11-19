@@ -1,0 +1,22 @@
+
+<canvas></canvas>
+
+<div class="titles-container clearfix">
+  <h2>Asteroid!</h2>
+  <h3>Press WASD to move, Press space to fire bullet</h3>
+  <h3>...Or simply move with your cursor to move and left click to fire</h3>
+  <h4 class="kill-count">Kills Count: 0</h4>
+  <h4 class="death-count">Death Count: 0</h4>
+</div>
+
+<script>
+  (function () {
+    var canvasEl = document.getElementsByTagName("canvas")[0];
+    canvasEl.width = Asteroids.Game.DIM_X;
+    canvasEl.height = Asteroids.Game.DIM_Y;
+
+    var ctx = canvasEl.getContext("2d");
+    var game = new Asteroids.Game();
+    new Asteroids.GameView(game, ctx, canvasEl).start();
+  })();
+</script>
