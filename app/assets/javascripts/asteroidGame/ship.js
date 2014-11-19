@@ -24,7 +24,7 @@
     // this.canvas = $("canvas");
 
     this.sprite = new Image();
-    this.sprite.src = "assets/shuttle.png";
+    this.sprite.src = Asteroids.SHIPIMG;
   };
 
   Ship.RADIUS = 15;
@@ -78,7 +78,7 @@
 
     ctx.font="20px Georgia";
     ctx.fillText("(" + this.pos[0] +"," +this.pos[1] + ")",this.pos[0],this.pos[1]);
-  
+
     ctx.save();
     ctx.translate(this.pos[0], this.pos[1]);
     // var offsetX = this.canvas.offsetLeft;

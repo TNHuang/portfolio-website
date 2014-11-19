@@ -11,6 +11,9 @@
 
 <script>
   (function () {
+    Asteroids.PNGS = ["<%= asset_path('asteroid-1.png') %>", "<%= asset_path('asteroid-2.png') %>", "<%= asset_path('asteroid-2.png') %>"];
+
+    Asteroids.SHIPIMG = "<%= asset_path('shuttle.png') %>";
     var canvasEl = document.getElementsByTagName("canvas")[0];
     canvasEl.width = Asteroids.Game.DIM_X;
     canvasEl.height = Asteroids.Game.DIM_Y;

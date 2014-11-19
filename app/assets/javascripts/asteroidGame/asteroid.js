@@ -15,11 +15,11 @@
     var randIndex = Math.floor(Math.random() * 3);
     // this.sprite.src = "assets/asteroid-1.png";
 
-    this.sprite.src = Asteroid.PNGS[randIndex];
+    this.sprite.src = Asteroids.PNGS[randIndex];
 
   };
 
-  Asteroid.PNGS = ["assets/asteroid-1.png", "assets/asteroid-2.png", "assets/asteroid-3.png"]
+  // Asteroid.PNGS = ["assets/asteroid-1.png", "assets/asteroid-2.png", "assets/asteroid-3.png"]
   Asteroid.COLOR = "#ccc";
   Asteroid.RADIUS = 25;
   Asteroid.SPEED = 4;
