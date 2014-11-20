@@ -362,6 +362,7 @@ strong:hover {
   bottom: 0;
   left: 0;
   background: rgba(0,0,0,0.8);
+
   opacity: 0;
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
@@ -371,10 +372,11 @@ strong:hover {
 }
 
 .project-modal:target {
+
   opacity: 1;
   pointer-events: auto;
 }
-//
+
 .project-modal > div {
   width: 900px;
   position: relative;
