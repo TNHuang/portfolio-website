@@ -394,6 +394,18 @@ CSS, TDD, CSS, Node.js.<br><br>
 <script>
   $(function () {
 
+    function isVisible() {
+      if ( $(".main").hasClass('fixed') === false){
+        $(".main").addClass('fixed');
+      }
+    };
+
+    $(".project-modal").bind("isVisible", isVisible);
+
+    $(".project-modal").show('slow', function(){
+      $(this).trigger('isVisible');
+    });
+
     currentY = 0;
     $('.clear-message').on('click', function(event){
       event.preventDefault();
