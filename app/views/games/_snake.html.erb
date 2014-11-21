@@ -1,1 +1,35 @@
-<h4>Hello I'm snake</h4>
+
+  <h1>~<:<<<<<></h1>
+
+
+  <div class='menu-group'>
+    <div class='score'></div>
+    <div>press arrow key to move snake</div>
+    <button class="start-game">press this to start or pause game</button>
+    <div class="game-over group hidden">
+      <h3>GAME OVER!</h3>
+      <br><button class='new-game'>play again?</button>
+    </div>
+  </div>
+
+  <div class='board-container'>
+    <ul class="group">
+
+    </ul>
+  </div>
+
+
+
+  <script>
+  $(document).ready(function(){
+
+    var $el = $('ul.group')
+
+    var newView = new SnakeGame.View($el);
+
+    $('button.new-game').on("click", function () {
+      window.location.reload();
+    });
+
+  });
+  </script>

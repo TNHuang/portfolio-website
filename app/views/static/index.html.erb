@@ -222,13 +222,14 @@ CSS, TDD, CSS, Node.js.<br><br>
         <div class='icon-container-heroku'>
           <img class='live-icon-heroku icon' src="<%= asset_path('social-media-icons.png') %>" />
         </div>
-        <a href="#">not yet Live :(</a>
+        <a href="#snake-modal" class='open-live'>Live</a>
       </div>
 
       <div class='project-modal' id='snake-modal'>
-        <div class="non-embedded">
+        <div class="snake-game">
             <a href="#close" title='Close' class='close'>&times</a>
-            <img class="project-img medium" src="<%= asset_path('snake.png') %>" />
+              <%= render "games/snake" %>
+            <!-- <img class="project-img medium" src="<%= asset_path('snake.png') %>" /> -->
         </div>
       </div>
     </section>

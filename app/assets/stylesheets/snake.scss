@@ -1,0 +1,84 @@
+div.snake-game {
+
+
+  ul, li {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .group:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .board-container {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+  }
+  ul.group {
+    display: block;
+    // width: 300px;
+    // height: 300px;
+    // border: 1px solid black;
+    /*width: 1000px;*/
+  }
+
+  h1 {
+    text-align: center;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .game-over {
+    position: absolute;
+    text-align: center;
+  }
+
+  .menu-group {
+    position: relative;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  ul.group li {
+    width: 10px;
+    height: 10px;
+    background: #DDD;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+  ul.col {
+    width: 10px;
+    display: block;
+    float: left;
+  }
+
+  .apple {
+    background: red;
+  }
+
+  .snake {
+    background: green;
+  }
+
+  .snakehead {
+    background: blue;
+  }
+  button.new-game {
+    border: 1px solid gray;
+    background: #ccc;
+  }
+  button.start-game {
+    border: 1px solid gray;
+    background: #ccc;
+  }
+  button.start-game:hover {
+    background: #ddd;
+  }
+}
