@@ -44,7 +44,7 @@
   View.prototype.start = function() {
     if (this.isPause === true) {
       this.isPause = false;
-      this.stepIntervalId = setInterval(this.step.bind(this), 300);
+      this.stepIntervalId = setInterval(this.step.bind(this), 100);
       this.appleSpawn = setInterval(function() {
         this.board.newApple();
       }.bind(this), 3000);

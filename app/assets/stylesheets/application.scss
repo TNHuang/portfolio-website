@@ -247,6 +247,13 @@ strong:hover {
 }
 
 .project-links > a {
+  text-align: right;
+  vertical-align: middle;
+  position: relative;
+  top:-25px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
   display: inline-block;
   margin: 5px;
   color: white;
