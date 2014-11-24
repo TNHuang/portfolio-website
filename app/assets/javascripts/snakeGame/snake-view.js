@@ -8,6 +8,7 @@
     var width = 25;
 
     this.isPause = true;
+    this.hasStart = false;
     this.el = $el;
     this.board = new SnakeGame.Board({height: height, width: width});
 
@@ -30,6 +31,10 @@
     $(".start-game").click( function(){
       if(this.isPause === true){
         this.start();
+        if (this.hasStart === false){
+          $(".game-start").addClass("hidden");
+          this.hasStart = true;
+        }
       } else {
         this.pause();
       }

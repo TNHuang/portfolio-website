@@ -12,7 +12,7 @@
     this.dir = new Coord([1,0]);
     this.segments = [new Coord([this.startY, this.startX ]),
                      new Coord([this.startY, this.startX+1 ]),
-                     new Coord([this.startY, this.startX +2])];
+                     new Coord([this.startY, this.startX+2])];
     this.snakeHeadIndex = this.segments.length-1;
     this.growCounter = 0; //how long snake is allow to grow
   }
@@ -175,6 +175,7 @@
     this.apples[appleIndex] = this.apples[this.apples.length - 1];
     this.apples = this.apples.slice(0, -1);
     this.score += 10;
+
   };
   //
 
