@@ -21,7 +21,24 @@ div#asteroids-game{
   .asteroids-game-start h3 {
     width: 400px;
     margin: 100px auto;
+  }
 
+  .asteroids-game-pause {
+    vertical-align: middle;
+    color: white;
+    position: absolute;
+    top: 23px;
+    left: 70px;
+    width: 800px;
+    height: 480px;
+    background: black;
+    opacity: 0.5;
+    z-index : 1000;
+  }
+
+  .asteroids-game-pause h3 {
+    width: 400px;
+    margin: 100px auto;
   }
   button.asteroids-start-game {
     position: absolute;

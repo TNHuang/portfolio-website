@@ -161,7 +161,7 @@ strong {
 }
 
 strong:hover {
-  color: #6c0;
+  color: black;
 }
 
 .project-container h3 {
@@ -248,7 +248,7 @@ strong:hover {
 
 .project-links > a {
   text-align: right;
-  vertical-align: middle;
+
   position: relative;
   top:-25px;
   left: -10px;
@@ -257,6 +257,19 @@ strong:hover {
   display: inline-block;
   margin: 5px;
   color: white;
+}
+
+.resume-link {
+  display: block;
+  float:left;
+  padding: 5px;
+  background: #06c;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.5s;
+}
+.resume-link:hover {
+  background: #0c6;
 }
 
 .project-links:hover {

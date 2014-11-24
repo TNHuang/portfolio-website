@@ -63,8 +63,10 @@
       event.preventDefault();
       if (this.isPause === true) {
         this.restart();
+        $(".asteroids-game-pause").addClass("hidden");
       } else {
         this.stop();
+        $(".asteroids-game-pause").removeClass("hidden");
       }
     }.bind(this));
 
