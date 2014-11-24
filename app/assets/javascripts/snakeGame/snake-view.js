@@ -117,9 +117,9 @@
     var height = options.height;
     var width = options.width;
 
-    for (var i = 0; i < height; i++) {
+    for (var i = 0; i <= height; i++) {
       this.el.append("<ul class='col'>");
-      for (var j = 0; j < width; j++) {
+      for (var j = 0; j <= width; j++) {
         $('ul.col:last').append("<li></li>");
       }
     }
