@@ -66,15 +66,26 @@
       } else {
         this.stop();
       }
-
     }.bind(this));
+
+    $(".asteroids-start-game").click( function(event){
+      event.preventDefault();
+      if (this.hasStart === false){
+        this.restart();
+        $(".asteroids-game-start").addClass("hidden");
+        this.hasStart = true;
+      }
+
+    }.bind(this))
+
+
   };
 
   GameView.prototype.start = function () {
     var gameView = this;
     this.isPause = false;
-
-    this.timerId = this.restart();
+    this.hasStart = false;
+    // this.restart();
     this.MouseEventHanlder();
     this.bindKeyHandlers();
   };
@@ -92,7 +103,6 @@
       }.bind(this), 50
     );
     this.isPause = false;
-    return this.timerId;
   };
 
 
